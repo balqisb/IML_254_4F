@@ -1,0 +1,111 @@
+
+<html>
+<head> 
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+    <title>Family</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+</head>
+<body>
+
+<header> 
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="kpop.html">Kpop</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="dream.html">Dream</a></li>
+        </ul>
+    </nav> 
+    <a class="cta" href="https://poki.com/en/g/we-become-what-we-behold"><button>Game</button></a>
+</header> 
+
+<div class="section">
+    <div class="content">
+        <h1>This is my dear family member's</h1>
+ <ol>
+<li> Azharolkhair bin Abdullah -49 years old-</li>
+<li> Shuhaila binti Mohamad Salleh -48 years old-</li>
+<li> Balqis Batrisyia binti Azharolkhair -20 years old-</li>
+<li> Arfa Farzana binti Azharolkhair -17 years old-</li>
+<li> Aleesya Firzanah binti Azharolkhair -15 years old-</li>
+<li> Arissa Damia binti Azharolkhair -10 years old-</li>
+<li> Aqish Inara binti Azharolkhair -7 years old-</li>
+</ol>
+
+    </div>
+    <video src="resources/video/1.mp4" alt="Me" controls></video>
+</div>
+
+<style>
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+
+.section video {
+    height: 500px;
+    border-radius: 10px;
+}
+
+.section .content {
+    max-width: 100%;
+}
+
+.section h1 {
+    margin: 0;
+    color: #000;
+}
+
+.section p {
+    color: black;
+    margin-right: 15px;
+    font-family: "Grandstander", cursive;
+}
+</style>
+
+<a href="#" class="back-to-top">
+    <span class="material-icons">keyboard_arrow_up</span>
+</a>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/b_tisya04/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:2022818714@student.uitm.edu.my"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/+601120962706"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Balqis</span></p>
+    </div>
+</footer>
+
+<script>
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+</body>
+</html>

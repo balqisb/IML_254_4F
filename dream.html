@@ -1,0 +1,159 @@
+
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+    <title>Drean</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="kpop.html">Kpop</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="dream.html">Dream</a></li>
+        </ul>
+    </nav>
+    <a class="cta" href="https://poki.com/en/g/we-become-what-we-behold"><button>Game</button></a>
+</header>
+
+<div class="container">
+    <h2 class="w3-center">My Trip Wish List</h2>
+
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="resources/image/mekah.jpg" height="400px" width="600px" alt="Image of Mekah, Arab Saudi">
+        <img class="mySlides" src="resources/image/kashmir.jpg" height="400px" width="600px" alt="Image of Kashmir, India">
+        <img class="mySlides" src="resources/image/kyoto.jpg" height="400px" width="600px" alt="Image of Kyoto, Japan">
+        <img class="mySlides" src="resources/image/austria.jpg" height="400px" width="600px" alt="Image of Austria, Europe">
+        <img class="mySlides" src="resources/image/iceland.jpg" height="400px" width="600px" alt="Image of Aurora Borealis, Iceland">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+    
+    <div style="text-align: center;">
+        <p>Hoping to go there when I have enough money, Aamiin. ^-^</p>
+    </div>
+</div>
+
+<a href="#" class="back-to-top">
+    <span class="material-icons">keyboard_arrow_up</span>
+</a>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/b_tisya04/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:2022818714@student.uitm.edu.my"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/+601120962706"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Balqis</span></p>
+    </div>
+</footer>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+}
+
+const backToTopButton = document.querySelector('.back-to-top');
+
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
+</script>
+
+<style>
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Center align text */
+.w3-center {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Slideshow container */
+.w3-content {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slides */
+.mySlides {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+/* Buttons for slideshow navigation */
+.w3-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.w3-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.w3-display-left {
+    left: 0;
+}
+
+.w3-display-right {
+    right: 0;
+}
+
+
+</style>
+
+
+</body>
+</html>

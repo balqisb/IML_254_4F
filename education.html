@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+
+</head>
+<body>
+
+<header> 
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="kpop.html">Kpop</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="dream.html">Dream</a></li>
+        </ul>
+    </nav> 
+    <a class="cta" href="https://poki.com/en/g/we-become-what-we-behold"><button>Game</button></a>
+</header>
+
+<div class="container"> 
+    <!-- Your main content container -->
+</div> 
+
+<div class="content">
+    <h1>My Education Journey</h1>
+    <div class="slideshow-container">
+        <div class="slides">
+            <img src="resources/image/11.jpg" alt="tadika
+            <div class="description">Tadika Qaseh Ummi in Klang</div
+        </div>
+
+        <div class="slides">
+            <img src="resources/image/22.jpeg" alt="sk
+            <div class="description">Sekolah Kebangsaan Johan Setia, Klang</div>
+        </div>
+
+        <div class="slides">
+            <img src="resources/image/23.jpg" alt="smk">
+            <div class="description">Sekolah Menengah Jalan Kebun, Shah Alam</div>
+        </div>
+
+        <div class="slides">
+            <img src="resources/image/24.jpg" alt="uni">
+            <div class="description">UiTM Merbok, Kedah</div>
+        </div>
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+</div>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function changeSlide(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("slides");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+    <style>
+        /* Additional CSS for slideshow and content */
+        .content {
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content h1 {
+            margin: 0;
+            color: #000;
+        }
+
+        .content p {
+            color: black;
+            font-family: "Grandstander", cursive;
+        }
+
+        .slideshow-container {
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .slides {
+            display: none;
+            text-align: center;
+        }
+
+        .slides img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 0 0 10px 10px;
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+    </style>
+
+<a href="#" class="back-to-top">
+    <span class="material-icons">keyboard_arrow_up</span>
+</a>
+
+<script>
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/b_tisya04/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:2022818714@student.uitm.edu.my"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/+601120962706"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Balqis</span></p>
+    </div>
+</footer>
+
+</body>
+</html>

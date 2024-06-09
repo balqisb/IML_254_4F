@@ -1,0 +1,108 @@
+
+<html>
+<head> 
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+    <title>Kpop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons"></head>
+<body>
+
+<header> 
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="kpop.html">Kpop</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="dream.html">Dream</a></li>
+        </ul>
+    </nav> 
+    <a class="cta" href="https://poki.com/en/g/we-become-what-we-behold"><button>Game</button></a>
+</header> 
+
+<div class="container"> 
+
+</div> 
+
+<div class="card">
+    <video width="640" height="360" controls>
+        <source src="resources/video/3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="description">
+        <h2> My Favourite Kpop Group \^∆^/</h2>
+        <p><ul type="square">
+<li> Seoho </li>
+<li> Leedo </li>
+<li> Ravn </li>
+<li> Keonhee </li>
+<li> Xion </li>
+</ul>
+</p>
+    </div>
+</div>
+
+<style>
+      .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .card video {
+            width: 100%;
+            display: block;
+        }
+
+        .card .description {
+            padding: 20px;
+            text-align: center;
+            color: #962DB4;
+        }
+    </style>
+
+<a href="#" class="back-to-top">
+    <span class="material-icons">keyboard_arrow_up</span>
+</a>
+
+<script>
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.pageYOffset > 300) {
+            backToTopButton.style.display = 'block';
+        } else {
+            backToTopButton.style.display = 'none';
+        }
+    });
+
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/b_tisya04/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:2022818714@student.uitm.edu.my"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/+601120962706"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Balqis</span></p>
+    </div>
+</footer>
+
+</body>
+</html>

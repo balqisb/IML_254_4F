@@ -1,0 +1,132 @@
+
+<html>
+<head> 
+    <link type="text/css" rel="stylesheet" href="resources/css/style.css">
+    <title>Draft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<header> 
+    <nav>
+        <ul class="nav_links">
+            <li><a href="index.html">About Me</a></li>
+            <li><a href="family.html">Family</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a href="kpop.html">Kpop</a></li>
+            <li><a href="hobby.html">Hobby</a></li>
+            <li><a href="dream.html">Dream</a></li>
+        </ul>
+    </nav> 
+    <a class="cta" href="https://poki.com/en/g/we-become-what-we-behold"><button>Game</button></a>
+</header> 
+
+<div class="container"> 
+    <!-- Your main content container -->
+</div> 
+
+<div class="imgBoxContainer">
+    <div class="videoSection">
+        <video width="300" height="300" controls>
+            <source src="resources/video/4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Our first trip with my uni friends #beware of the volume</p>
+    </div>
+    <div class="imgBox" id="imgBox-1">
+        <img src="resources/image/20.jpg" alt="Me">
+        <p>My Uni friends, the upper left is Nur Atifah Sophia -the "penyeri" of the group</p> 
+        <p> Down left, Hawa Nabila -the "loya buruk" of the group-</p>
+        <p> Upper right, Nurul Anis Adeela -the "mak2" vibe one-</p>
+        <p> Down right, Nur Alya Ixora -my first friend in uni -the "have the same interest" af a friend</p>
+    </div>
+    <div class="imgBox" id="imgBox-2">
+        <img src="resources/image/21.jpg" alt="Me">
+        <p>My highschool friends, the upper left is Syazrin Nur Aliah -the "adik" of the group</p> 
+        <p> Down left, Afiqah Balqis -the "study in other country (Jordan)" of the group-</p>
+        <p> Upper right, Nur Alia Qistina -the "My other self" one-</p>
+    </div>
+</div>
+    <style>
+        /* Additional CSS for video section and image boxes */
+        .imgBoxContainer {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap; /* Added to allow boxes to wrap on smaller screens */
+        }
+
+        .imgBox {
+            background-color: #f4dada;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            max-width: 300px;
+            width: 100%;
+            text-align: left;
+            transition: transform 0.3s;
+            font-family: "Grandstander", cursive;
+            flex: 1 1 calc(50% - 2rem); /* Adjusted flex basis to fit two boxes per row */
+        }
+
+        .imgBox:hover {
+            transform: translateY(-10px);
+        }
+
+        .imgBox img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .imgBox p {
+            padding: 10px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .videoSection {
+            background-color: #f4dada;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            max-width: 300px;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.3s;
+            font-family: "Grandstander", cursive;
+        }
+
+        .videoSection:hover {
+            transform: translateY(-10px);
+        }
+
+        .videoSection video {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+    </style>
+
+
+<footer>
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.instagram.com/b_tisya04/"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:2022818714@student.uitm.edu.my"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/+601120962706"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2023; Designed by <span class="designer">Balqis</span></p>
+    </div>
+</footer>
+
+</body>
+</html>
